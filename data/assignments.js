@@ -59,6 +59,13 @@ assignments = {
       "dueDate": "2026-10-16T23:59:00",
       "link": "https://www.gradescope.com/courses/1412635",
       "submitted": false
+    },
+    {
+      "title": "Practice Daily Quiz 10/7",
+      "course": "ME 152A F26",
+      "dueDate": "2026-10-09T15:10:00",
+      "link": "https://www.gradescope.com/courses/1412635/assignments/8827659/submissions/434937595",
+      "submitted": true
     }
   ]
 };

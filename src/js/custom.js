@@ -151,8 +151,10 @@ function init() {
 
     const emptyMessage = document.createElement('p');
     emptyMessage.id = getEmptyMessageId(i);
-    emptyMessage.className = 'text-muted mb-0';
+    emptyMessage.className = 'mb-0';
     emptyMessage.textContent = "Nothin' for now 🫡";
+    emptyMessage.style.color = '#495057';
+    emptyMessage.style.paddingLeft = '12px';
     emptyMessage.style.display = 'none';
     div.appendChild(emptyMessage);
 

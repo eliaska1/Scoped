@@ -55,6 +55,10 @@ function getCalendarContainerId(i) {
   return `chart-container-${i}`;
 }
 
+function getEmptyMessageId(i) {
+  return `empty-message-${i}`;
+}
+
 function calendarHeightForEntries(presentEntries) {
   return Math.max(presentEntries.length, 1) * BAR_WIDTH + X_AXIS_HEIGHT;
 }
@@ -144,6 +148,13 @@ function init() {
     courseTitle.textContent = courseName;
     courseTitle.style.fontSize = '1.25rem';
     div.appendChild(courseTitle);
+
+    const emptyMessage = document.createElement('p');
+    emptyMessage.id = getEmptyMessageId(i);
+    emptyMessage.className = 'text-muted mb-0';
+    emptyMessage.textContent = "Nothin' for now 🫡";
+    emptyMessage.style.display = 'none';
+    div.appendChild(emptyMessage);
 
     const calendarContainer = document.createElement('div');
     calendarContainer.id = getCalendarContainerId(i);
@@ -376,12 +387,18 @@ function refresh(recurse=false) {
       yTicks.callback = (val, i) => '';
     }
 
-    // Update calendar height
+    // Show a message instead of the chart if there are no assignments
     const calendarContainer = document.getElementById(getCalendarContainerId(i));
-    calendarContainer.style.height = `${calendarHeightForEntries(presentEntries)}px`;
+    const emptyMessage = document.getElementById(getEmptyMessageId(i));
+    const isEmpty = presentEntries.length === 0;
+    calendarContainer.style.display = isEmpty ? 'none' : '';
+    emptyMessage.style.display = isEmpty ? '' : 'none';
 
-    chart.update();
-  }
+    if (!isEmpty) {
+      // Update calendar height
+      calendarContainer.style.height = `${calendarHeightForEntries(presentEntries)}px`;
+      chart.update();
+    }
 
   console.log('Refreshed');
   if (recurse) {

@@ -60,7 +60,7 @@ class Gradescope(Module):
                     status = Gradescope._get_assignment_status(row)
                     link = Gradescope._get_assignment_link(row, course_link)
                     submitted = (status != 'No Submission')
-                    if submitted:
+                    if submitted == true:
                         continue
 
                     # Add to assignments list

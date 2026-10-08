@@ -60,6 +60,8 @@ class Gradescope(Module):
                     status = Gradescope._get_assignment_status(row)
                     link = Gradescope._get_assignment_link(row, course_link)
                     submitted = (status != 'No Submission')
+                    if submitted:
+                        continue
 
                     # Add to assignments list
                     assignments[course_name].append(utils.get_assignment_dict(

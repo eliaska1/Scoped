@@ -153,7 +153,7 @@ function init() {
     emptyMessage.id = getEmptyMessageId(i);
     emptyMessage.className = 'mb-0';
     emptyMessage.textContent = "Nothin' for now 🫡";
-    emptyMessage.style.color = '#495057';
+    emptyMessage.style.color = '#343a40';
     emptyMessage.style.paddingLeft = '12px';
     emptyMessage.style.display = 'none';
     div.appendChild(emptyMessage);

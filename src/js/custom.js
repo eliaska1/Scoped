@@ -399,7 +399,8 @@ function refresh(recurse=false) {
       calendarContainer.style.height = `${calendarHeightForEntries(presentEntries)}px`;
       chart.update();
     }
-
+  }
+  
   console.log('Refreshed');
   if (recurse) {
     setTimeout(() => refresh(recurse), 1000);

@@ -170,7 +170,7 @@ function init() {
       "Tide’s out on assignments 🌊",
       "Diving deep into... free time 🤿",
       "Nothing lurking in the depths 🦑",
-      "Otter-ly free today 🦦”,
+      "Otter-ly free today 🦦",
       "Anchors aweigh... to nowhere, nothing's due ⚓️",
       "Free time unlocked 🔓"
     ];

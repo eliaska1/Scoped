@@ -164,7 +164,7 @@ function init() {
       "Surf’s up, homework’s down 🏄‍♂️",
       "Beach day unlocked 🏖️",
       "Stoked: zero assignments 🤙",
-      "Full send 🧗‍♂️”,
+      "Full send 🧗‍♂️",
       "Belay's off, nothing's due 🪢",
       "Blue skies at the crag 🏔️",
       "Tide’s out on assignments 🌊",

@@ -152,7 +152,29 @@ function init() {
     const emptyMessage = document.createElement('p');
     emptyMessage.id = getEmptyMessageId(i);
     emptyMessage.className = 'mb-0';
-    emptyMessage.textContent = "Nothin' for now 🫡";
+    const emptyMessages = [
+      "Mission complete 🫡",
+      'All caught up! 🎉',
+      'Nothing due, go touch grass 🌱',
+      "Flyin' High 🪁",
+      'Inbox empty, brain full ✨'
+      'Your professor has gone quiet... suspicious 👀'
+      'Suspiciously quiet in here... 🦗'
+      "Nothin' for now 😎"
+      "Surf’s up, homework’s down 🏄‍♂️"
+      "Beach day unlocked 🏖️"
+      "Stoked: zero assignments 🤙"
+      "Full send 🧗‍♂️”
+      "Belay’s off, nothing’s due 🪢"
+      "Blue skies at the crag 🏔️”
+      "Tide’s out on assignments 🌊”
+      "Diving deep into... free time 🤿”
+      "Nothing lurking in the depths 🦑”
+      "Otter-ly free today 🦦”
+      "Anchors aweigh... to nowhere, nothing’s due ⚓”
+      "Free time unlocked 🔓”
+    ];
+    emptyMessage.textContent = emptyMessages[Math.floor(Math.random() * emptyMessages.length)];
     emptyMessage.style.color = '#343a40';
     emptyMessage.style.paddingLeft = '12px';
     emptyMessage.style.display = 'none';

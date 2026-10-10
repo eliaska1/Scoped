@@ -165,13 +165,13 @@ function init() {
       "Beach day unlocked 🏖️"
       "Stoked: zero assignments 🤙"
       "Full send 🧗‍♂️”
-      "Belay’s off, nothing’s due 🪢"
+      "Belay's off, nothing's due 🪢"
       "Blue skies at the crag 🏔️"
       "Tide’s out on assignments 🌊"
       "Diving deep into... free time 🤿"
       "Nothing lurking in the depths 🦑"
       "Otter-ly free today 🦦”
-      "Anchors aweigh... to nowhere, nothing’s due ⚓"
+      "Anchors aweigh... to nowhere, nothing's due ⚓️"
       "Free time unlocked 🔓"
     ];
     emptyMessage.textContent = emptyMessages[Math.floor(Math.random() * emptyMessages.length)];

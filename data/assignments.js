@@ -1,13 +1,6 @@
 assignments = {
   "ME 103 F26": [
     {
-      "title": "ME 103 F26 - Homework Assignment #5",
-      "course": "ME 103 F26",
-      "dueDate": "2026-11-18T23:59:00",
-      "link": "https://www.gradescope.com/courses/1417610",
-      "submitted": false
-    },
-    {
       "title": "ME 103 F26 - Homework Assignment #6",
       "course": "ME 103 F26",
       "dueDate": "2026-11-25T23:59:00",
